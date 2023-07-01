@@ -1,6 +1,6 @@
 # Mail Server DNS Records Cheat-Sheet
 
-If you want to run a mail server on the public internet, you need to set up your [DNS Records](networking/dns-record-types.md) correctly. While some [DNS Records](networking/dns-record-types.md) are necessary to send and receive emails, others are recommended to build a good reputation.
+If you want to run a mail server on the public internet, you need to set up your [DNS Records](dns-record-types.md) correctly. While some [DNS Records](dns-record-types.md) are necessary to send and receive emails, others are recommended to build a good reputation.
 
 ## Required Mail Server DNS Records
 ### A Record
@@ -44,7 +44,7 @@ DKIM (Domain Keys Identified Mail) allows the receiving mail server to check tha
 
 >If you want to add DKIM to your mail server you first need to create a private and a public keypair
 
-We use the tool [OpenSSL](tools/openssl.md) to generate a DKIM private and public keypair.
+We use the tool [OpenSSL](openssl.md) to generate a DKIM private and public keypair.
 
 ```sh
 openssl genrsa -out dkim_private.pem 2048
